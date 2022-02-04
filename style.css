@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    height: 440px;
+    margin-top: 30px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    -webkit-box-shadow: 5px 5px 50px -5px rgba(167, 167, 167, 0.25);
+    -moz-box-shadow: 5px 5px 50px -5px rgba(167, 167, 167, 0.25);
+    box-shadow: 5px 5px 50px -5px rgba(167, 167, 167, 0.25);
+}
+
+.output_div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+    border-radius: 4px;
+    background: #dddddd;
+}
+
+.output_div input {
+    width: 100%;
+    color: black;
+    border: none;
+    transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+    border-radius: 4px;
+    text-align: right;
+}
+
+.operators_1 {
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+}
+
+.operators_1 input, .operators_2 input {
+    color: black;
+    border: none;
+    width: 25%;
+    transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+}
+
+.operators_1 input:hover, .operators_2 input:hover, .operators_1 input:active, .operators_2 input:active  {
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+
+.operators_2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 15%;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 60%;
+}
+
+.numbers input {
+    color: black;
+    border: none;
+    transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+    width: 33%;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+}
+
+.numbers input:hover, .numbers input:active {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease-in,
+                color 0.3s ease-in;
+}
+
+input[type='button'] {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input[type='text'] {
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.output_div > input[type='text']:first-child {
+    font-size: 20px;
+}
